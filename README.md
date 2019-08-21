@@ -22,5 +22,6 @@ node liri.js movie-this <enter movie name>
 
 Bonus command below. Enter and see what it does:
 
-Liri-Bot\images\do-what-it-says.jpg
+![do-what-it-says](https://user-images.githubusercontent.com/33464074/63469332-cf731700-c41e-11e9-9e38-68afb66fd45d.jpg)
+
 
