@@ -6,7 +6,7 @@ To retrieve a listing of upcoming concerts from a specific band/artist enter:
 
 node liri.js concert-this <enter in specific band/artist>
 
-Liri-Bot\images\concert-this.jpg
+![concert-this](https://user-images.githubusercontent.com/33464074/63469194-802ce680-c41e-11e9-81d4-d2d7f587d02f.jpg)
 
 To retrieve song info from your favorite track enter:
 
