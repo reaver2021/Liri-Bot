@@ -78,7 +78,7 @@ var parameter = process.argv.splice(3).join(" ");
         .search({
             type:"track",
             query: parameter,
-        }, function(err, data){
+        },  function(err, data){
 
             if(err){
                 return console.log("Error Occured: " + err)
@@ -96,6 +96,40 @@ var parameter = process.argv.splice(3).join(" ");
                     console.log("Preview: " + url);
                     console.log("Album: " + albumName);
                     console.log("--------------------");
+                }
+            }})
+    }
+    
+    if (action === "do-what-it-says"){
+        fs.readFile("./random.txt", "utf8", function(error, data){
+            if(err) {
+                return console.log(error);
+            } else{
+                var dataArr = data.split(",");
+                if(dataArr[0]==="spotify-this-song"){
+                    spotify
+                    .search({
+                        type: "track",
+                        query: dataArr[1]
+                    }, function(err, data){
+                        if(err) {
+                            return console.log("Error Occured: " + err);
+                        } else{
+                            for(i = 0; i < 2; i++){
+                                var artistName = data.tracks.items[i].artists[0].name;
+                                var songName = data.tracks.items[i].name;
+                                var url = data.tracks.items[i].preview_url;
+                                var albumName = data.tracks.items[i].album.name
+
+                                console.log("-------------------------")
+                                console.log("Artist: " + artistName);
+                                console.log("Song: " + songName);
+                                console.log("Preview: " + url);
+                                console.log("Album: " + albumName);
+                                console.log("--------------------");
+                            }
+                        }
+                    })
                 }
             }
         })
