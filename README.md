@@ -18,7 +18,7 @@ To retrieve movie info from your favorite film enter:
 
 node liri.js movie-this <enter movie name>
 
-Liri-Bot\images\movie-this.jpg
+![movie-this](https://user-images.githubusercontent.com/33464074/63469249-9e92e200-c41e-11e9-8dec-4dfd9f6af928.jpg)
 
 Bonus command below. Enter and see what it does:
 
