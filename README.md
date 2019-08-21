@@ -12,7 +12,7 @@ To retrieve song info from your favorite track enter:
 
 node liri.js spotify-this-song <enter song>
 
-Liri-Bot\images\spotify-this-song.jpg
+![spotify-this-song](https://user-images.githubusercontent.com/33464074/63469285-b4080c00-c41e-11e9-8b73-708dcf2b52dc.jpg)
 
 To retrieve movie info from your favorite film enter:
 
